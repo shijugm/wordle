@@ -12,6 +12,14 @@ def get_input_word(iteration = 0 ):
     
     return input_word
     
+def get_input_array():
+    imput_word = []
+    input_word = input("Enter an array of the tries and responses example [['AEROS' , 'BGBBO'] , ['NEIST' , 'BGGGG']]  : " )
+
+    # update_used_word(input_word)
+    
+    return input_word
+
 
 def get_word_response(input_word):
     print("Enter characters  G or 0 for GREEN, 1 or B for BLACK & 2 or O for ORANGE")

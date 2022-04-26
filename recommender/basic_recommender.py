@@ -24,15 +24,16 @@ def recommend(words_list):
     filteredwords ,  filteredwordsScore, alphabetsScore = refresh_words_list_and_rescore(words_list)
 
     print(f"filtered words count = {len(filteredwords)}")
-    print(alphabetsScore)
 
-    word = getWordWithBestScore(filteredwordsScore )
-
-    if len(filteredwords) <= 10:
-        print( f"Less than 10 possible words {filteredwords}") 
-
-    print(f"Recommended word  : {word}")
-    print(f"globalvars.orange loc = {globals.orange_loc}")
+    if len(filteredwords) == 0:
+        print(f"Cannot find words that matches the criteria")
+    else:
+        print(alphabetsScore)
+        word = getWordWithBestScore(filteredwordsScore )
+        if len(filteredwords) <= 10:
+            print( f"Less than 10 possible words {filteredwords}") 
+        print(f"Recommended word  : {word}")
+    
 
     return filteredwords
 
