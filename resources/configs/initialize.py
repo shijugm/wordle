@@ -1,5 +1,6 @@
 import resources.configs.globals as globals
-
+import os
+from pathlib import Path
 
 def initialize_globals():     
 
@@ -12,11 +13,16 @@ def initialize_globals():
 
 def fetch_master_list():
 
+    cwd = Path.cwd()
+    filename = os.path.join(cwd, 'resources/data/all5letter_words')
+    print(filename)
+
     allWords = []
-    with open('/Users/shijum/git/wordle/resources/data/all5letter_words') as file:
-    # with open('/Users/shijum/git/wordle/resources/all5letter_words_test') as file:
+
+    with open(filename) as file:
         for line in file:
             for words in line.split():
                 allWords.append(words.rstrip())   
     
     return allWords
+
