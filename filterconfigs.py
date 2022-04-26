@@ -49,5 +49,5 @@ def merge_black_list():
     merged_black = []
     for i in globals.black:
         if i not in globals.green and i not in globals.orange:
-            merged_black.black.append(i)
-    globals.black  = merged_black.black
+            merged_black.append(i)
+    globals.black  = merged_black

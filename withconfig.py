@@ -171,10 +171,10 @@ if __name__ == '__main__':
             for words in line.split():
                 allWords.append(words.rstrip())   
 
-    green = [ 'T' , ' ' , ' ' , ' ' , ' ' ]
-    orange = ['E' , 'R' , 'T' , 'U' ]
-    orange_loc  =  [[] , ['E' , 'R'] , ['R' , 'T' , 'E', 'U']  , ['U', 'R'] , ['T']]
-    black = ['A' , 'S' ,  'O' , 'N' , 'I', 'P' , 'I' , 'N' , 'C']
+    green = [ ' ' , ' ' , ' ' , 'O' , ' ' ]
+    orange = ['T' , 'A' , 'O' , 'A' ]
+    orange_loc  =  [['T'] , ['T' , 'A' , 'O'] , ['O']  , ['A', 'T'] , []]
+    black = ['S' , 'E' ,  'M' , 'C' , 'U', 'P' , 'I' , 'D'  ,'G' , 'R','W' , 'N', 'H', 'K']
     used = ['AEROS']
 
     #  allWords = ['LOWLY'] 
