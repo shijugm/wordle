@@ -1,4 +1,4 @@
-import globals
+import resources.configs.globals as globals
 
 
 def initialize_globals():     
@@ -13,7 +13,7 @@ def initialize_globals():
 def fetch_master_list():
 
     allWords = []
-    with open('/Users/shijum/git/wordle/resources/all5letter_words') as file:
+    with open('/Users/shijum/git/wordle/resources/data/all5letter_words') as file:
     # with open('/Users/shijum/git/wordle/resources/all5letter_words_test') as file:
         for line in file:
             for words in line.split():

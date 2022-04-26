@@ -1,5 +1,5 @@
 
-from filterconfigs import update_configs , update_used_word
+from resources.configs.filterconfigs import update_configs , update_used_word
 
 
 def get_input_word(iteration = 0 ):

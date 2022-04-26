@@ -1,4 +1,4 @@
-import globals
+import resources.configs.globals as globals
 
 
 def update_used_word(word):

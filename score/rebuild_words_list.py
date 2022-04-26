@@ -1,5 +1,5 @@
 
-import globals
+import resources.configs.globals  as globals
 
 
 def rebuild(wordslist ):

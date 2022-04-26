@@ -1,4 +1,4 @@
-import globals 
+import resources.configs.globals as globals 
 from score.rescore import refresh_words_list_and_rescore
 
 

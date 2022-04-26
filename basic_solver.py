@@ -1,13 +1,15 @@
-import initialize 
-import globals
-from user_interaction import get_input_word
-from user_interaction import get_word_response
+import resources.configs.initialize as initialize
+import resources.configs.globals as globals
+from interactions.user_interaction import get_input_word
+from interactions.user_interaction import get_word_response
 from recommender import basic_recommender 
 
 
 
 def basic_solver():
+    print(f"start initialize")
     initialize.initialize_globals()
+    print(f"end initialize")
     allWords = initialize.fetch_master_list()
     print(f"used = {globals.used}")
     basic_recommender.recommend(allWords)
